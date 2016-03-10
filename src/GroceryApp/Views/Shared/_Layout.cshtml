@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Grocery App - @ViewBag.Title</title>
+
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/lib/bootswatch/slate/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="sidebar">
+		<ul class="nav">
+			<li class="active">
+				<a asp-controller="App" asp-action="Index" href="#">Home</a>
+			</li>
+			<li>
+				<a asp-controller="App" asp-action="Admin" href="#">Admin</a>
+			</li>
+			<li>
+				<a asp-controller="Auth" asp-action="Logout" href="#">Logout</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="wrapper">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<button id="sidebarToggle" class="btn btn-default"><i class="fa fa-angle-left"></i></button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div id="main" class="container-fluid">
+		<div>
+			@RenderBody()
+		</div>
+	</div>
+
+	<div id="footer" class="container-fluid">
+		<div class="navbar navbar-inverse navbar-fixed-bottom">
+			<h4 class="text-center text-info">&copy; 2016 Grocery App</h4>
+		</div>
+	</div>
+
+	<script src="~/lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="~/js/site.js" type="text/javascript"></script>
+</body>
+</html>
