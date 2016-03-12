@@ -1,0 +1,5 @@
+﻿{
+	"Data": {
+		"GroceryAppConnection": "Server=DESKTOP;Database=GroceryApp;Trusted_Connection=true;MultipleActiveResultSets=true;"
+	}
+}

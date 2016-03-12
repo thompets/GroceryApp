@@ -1,0 +1,13 @@
+GroceryApp DB Structure
+
+Tables
+  - Users
+  - Stores
+  - Items
+  - GroceryTrips
+  - GroceryCategories
+  
+Relationships
+  - Store has many items
+  - An item has a category
+  - A GroceryTrip has many items and many stores and one user.
