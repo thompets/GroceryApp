@@ -1,13 +1,38 @@
 GroceryApp DB Structure
 
 Tables
-  - Users
+  - Users - Handled by Identity
   - Stores
-  - Items
+  - Items - Implement later
   - GroceryTrips
   - GroceryCategories
+  - StopCategoryTotals
   
 Relationships
   - Store has many items
   - An item has a category
   - A GroceryTrip has many items and many stores and one user.
+  
+  
+Repository Methods - (Work in progress)
+  - GetAllTrips
+    - returns all trips, no stops 
+  - GetAllTripsWithStops
+    - returns all trips with all stops
+  - GetStopTotalsByStop
+    - returns all stop totals for a given stop
+  - GetCategoryByName
+    - returns a category object by name
+  - GetStoreByName
+    - returns a store object by name
+  - AddTrip
+    - adds a trip with stops to db
+  - AddStopToTrip
+    - adds a stop to an existing trip
+  - AddStore
+    - adds a grocery store to db
+  - AddCategory
+    - adds a category to db
+    
+  TODO: Remove items from db, Get trips by user
+        AllTripsWithStops does not have Store for the stop or totals.  - Need to fix. 

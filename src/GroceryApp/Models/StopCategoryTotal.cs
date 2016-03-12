@@ -5,5 +5,6 @@
 		public int Id { get; set; }
 		public GroceryCategory Category { get; set; }
 		public decimal AmountSpent { get; set; }
+		public int StopId { get; set; }
 	}
 }

@@ -3,9 +3,9 @@ using Microsoft.Data.Entity;
 
 namespace GroceryApp.Models
 {
-	public class GroceryAppContext : IdentityDbContext<User>
+	public class GroceryContext : DbContext
 	{
-		public GroceryAppContext()
+		public GroceryContext()
 		{
 			Database.EnsureCreated();
 		}
